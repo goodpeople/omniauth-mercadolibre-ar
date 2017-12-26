@@ -17,10 +17,10 @@ Gem::Specification.new do |gem|
   gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   gem.require_paths = ["lib"]
 
-  gem.add_dependency 'omniauth', '~> 1.2', '>= 1.2.2'
-  gem.add_dependency 'omniauth-oauth2', '~> 1.2', '>= 1.2.0'
-  gem.add_development_dependency 'rspec', '~> 2.14', '>= 2.14.1'
-  gem.add_development_dependency 'rack-test', '~> 0'
-  gem.add_development_dependency 'simplecov', '~> 0'
-  gem.add_development_dependency 'webmock', '~> 0'
+  gem.add_dependency 'omniauth'
+  gem.add_dependency 'omniauth-oauth2'
+  gem.add_development_dependency 'rspec'
+  gem.add_development_dependency 'rack-test'
+  gem.add_development_dependency 'simplecov'
+  gem.add_development_dependency 'webmock'
 end
